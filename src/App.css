@@ -1,18 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  color: black;
+.App {
+  min-height: 100vh; /* Covers full height */
+  width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column; /* Avoids affecting the child container */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-
- body {
-  margin: 0;
+.Container {
+  text-align: center;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row; /* Ensures elements stay in a row */
+  flex-wrap: nowrap; /* Prevents wrapping */
+  justify-content: space-between; /* Ensures spacing */
+  align-items: center;
+  width: 90%; /* Ensures it doesn't shrink too much */
+  max-width: 1200px; /* Keeps layout structured */
+  gap: 40px; /* Creates space between elements */
+  padding: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+}
+
+.Samosa {
+  display:flex;
+  height:15em; /* Makes sure elements take equal space */
+  padding:1.5em;
+  margin:0 auto; /* Prevents shrinking */
+  text-align: center;
+  
+}
+
+.upgrade {
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  padding: 20px 10px;
+  width: 300px;
+  line-height: 1.5;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  margin-top: 10px;
 }
